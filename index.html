@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
+  <link href="style.css" rel="stylesheet">
+
+  <title>Lab3</title>
+</head>
+<body>
+  <div id="header">
+    <h1>Country Captials</h1>
+    <p>Each question is worth 20 points.</p>
+    <div id="attempts">Attempts: 0</div>
+  </div>
+
+  <hr>
+
+  <form id="quiz">
+    <div class="card" id="q1">
+      <div><b>1) What is the Captial of Mexico?</b></div>
+      <label><input type="radio" name="q1" value="Mexico City"> Mexico City</label><br>
+      <label><input type="radio" name="q1" value="Ottawa"> Ottawa</label><br>
+      <label><input type="radio" name="q1" value="New Delhi"> New Delhi</label>
+      <div class="feedback"></div>
+    </div>
+
+    <br>
+
+    <div class="card" id="q2">
+      <div><b>2) What is the Capital of the Korea?</b></div>
+      <input type="text" name="q2" placeholder="type your answer">
+      <div class="feedback"></div>
+    </div>
+
+    <br>
+
+    <div class="card" id="q3">
+      <div><b>3) What is the Capital of the USA?</b></div>
+      <select name="q3">
+        <option value="">-- Select one --</option>
+        <option value="San Francisco">San Francisco</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Boston">Boston</option>
+        <option value="Washington DC">Washington DC</option>
+      </select>
+      <div class="feedback"></div>
+    </div>
+
+    <br>
+
+    <div class="card" id="q4">
+      <div><b>4) How many letters does the Calpital of Canada have?</b></div>
+      <input type="number" name="q4" min="1" max="10" step="1" placeholder="enter a number">
+      <div class="feedback"></div>
+    </div>
+
+    <br>
+    
+    <div class="card" id="q5">
+      <div><b>5) What is not a Capital of a Country? </b></div>
+      <label><input type="checkbox" name="q5" value="Paris"> Paris</label>
+      <label><input type="checkbox" name="q5" value="Noumea"> Noumea</label>
+      <label><input type="checkbox" name="q5" value="Versaille"> Versaille</label>
+      <label><input type="checkbox" name="q5" value="Lyon"> Lyon</label>
+      <label><input type="checkbox" name="q5" value="Rennes"> Rennes</label>
+      <div class="feedback"></div>
+    </div>
+
+    <br>
+
+    <div class="btns">
+      <button type="submit">Submit Quiz</button>
+      <button type="reset">Reset</button>
+    </div>
+
+    <div id="scoreBox"></div>
+    <div id="messageBox"></div>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
